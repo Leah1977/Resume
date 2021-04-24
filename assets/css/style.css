@@ -3,7 +3,7 @@
 /*--------------------------------------------Colors*/
 
 .bg-color-name-title {
-    background-color: #676767;
+    background-color: #413f3f;
 }
 
 .bg-color-three-reasons {
@@ -35,19 +35,19 @@
 }
 
 .ui-menu-color-home {
-    background-color: #e67e22;
+    background-color: #2579beda;
 }
 
 .ui-menu-color-resume {
-    background-color: #9b59b6;
+    background-color: #d689f5;
 }
 
 .ui-menu-color-contact {
-    background-color: #3498db;
+    background-color: #49d35b;
 }
 
 .ui-menu-color-download {
-    background-color: #d9a81d;
+    background-color: #dbc892;
 }
 
 
@@ -98,6 +98,12 @@ h4 {
     display: table;
 }
 
+.section-column {
+    display: table-cell;
+    padding: 0 30px 30px;
+    float: none;
+}
+
 .history-heading,
 .section-heading {
     font-family: "Exo", sans-serif;
@@ -110,7 +116,7 @@ h4 {
 /*--------------------------------------------Heading*/
 
 header {
-    margin: 0;
+    margin: 0;    
 }
 
 .heading {
@@ -118,12 +124,12 @@ header {
 }
 
 .logo {
-    background: url("../images/rosie.jpg");
+    background: url("../images/logo.jpg");
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: no-repeat;  /*stops the image repeating*/
+    background-size: cover;  /*this covers the whole container*/
     min-height: 360px;
-    transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out; /*animation*/
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
 }
@@ -131,19 +137,27 @@ header {
 .name {
     font-family: "Exo", sans-serif;
     font-weight: 100;
-    font-size: 46px;
+    font-size: 54px;
     margin-top: 50px;
-    color: #ffffff;
+    color: #faf6f6;
 }
 
 .title {
     font-family: "Roboto", sans-serif;
-    font-weight: 200;
-    font-size: 28px;
+    font-weight: 300;
+    font-size: 26px;
     margin-top: 20px;
     margin-bottom: 90px;
-    color: #ffffff;
+    color: #faf6f6;
 }
+
+.list-inline-item:not(:last-child) {
+    margin: 0;
+}
+
+.menucontainer {
+    font-size: 0;
+}     /*closes the gaps in the html*/
 
 #nav {
     margin: 0;
@@ -151,6 +165,7 @@ header {
 
 #nav li {
     padding: 0;
+    font-size: 16px;
 }
 
 .menuitem {
@@ -161,13 +176,13 @@ header {
 
 .menuitem a {
     width: 100%;
-    text-decoration: none;
+    text-decoration: none;  /*removes the underline on the link*/
     color: #ffffff;
     height: 120px;
 }
 
 
-.menuitem a i {
+.menuitem a i {          /* targets the icon a child of the anchor*/
     padding-top: 22px;
     display: block;
     color: #fafafa;
@@ -203,19 +218,20 @@ footer {
     margin: 0;
 }
 
-footer .cv-pdf i {
+.cv-pdf i {
     color: #fafafa;
     text-align: center;
     font-size: 18px;
     padding-left: 5px;
-}
-
-footer .cv-pdf i:hover {
-    color: #e84610;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
+
+}
+
+footer .cv-pdf i:hover {
+    color: #e84610;
 }
 
 .social-links {
